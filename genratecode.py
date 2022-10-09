@@ -1,28 +1,27 @@
 intro = """
-                    <div class="columns portfolio-item">
-                        <div class="item-wrap">
+            <div id="modal-"""
+middle = """" class="popup-modal mfp-hide">
 
-                            <a href="#modal-"""
-mid="""" title="">
-                                <img alt="" src="images/"""
-ending = """.JPG">
-                                <div class="overlay">
-                                    <div class="portfolio-item-meta">
-                                        <h5>Coffee</h5>
-                                        <p>Illustrration</p>
-                                    </div>
-                                </div>
-                                <div class="link-icon"><i class="icon-plus"></i></div>
-                            </a>
+                <img class="scale-with-grid" src="images/"""
+ending = """.jpg" alt="" />
 
-                        </div>
-                    </div>
-                    <!-- item end -->
+                <div class="description-box">
+                    <h4>Coffee Cup</h4>
+                    <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                    <span class="categories"><i class="fa fa-tag"></i>Branding, Webdesign</span>
+                </div>
+
+                <div class="link-box">
+                    <a href="http://srikrishnacommunication.com/Giridesigns.html" target="_blank">Details</a>
+                    <a class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- modal-01 End -->
 """
-
 for i in range(40,67):
     print(intro,end="")
     print(str(i),end="")
-    print(mid,end="")
+    print(middle,end="")
     print("img"+str(i),end="")
     print(ending,end="\n\n")
